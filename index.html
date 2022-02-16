@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="stylesheet" href="./all.min.css" type="text/css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-info justify-content-center">
+        <h4 class="text-center">Getting data from API.</h4>
+    </nav>
+
+    <div class="arrTable animate__animated animate__fadeIn p-2">
+      <table class="table table-bordered" style="color: gray">
+        <thead>
+          <tr class="fw-bolder bg-info" style="color:black;">
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Website</td>
+            <td>More details</td>
+          </tr>
+        </thead>
+        <tbody
+          class="addArray" style="background-color: rgb(124, 225, 250, 0.5);"
+        ></tbody>
+      </table>
+    </div>
+    <div class="divPopup">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header bg-info " >
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" style="background-color: rgb(124, 225, 250, 0.5);">
+                <p><b>UserName:  </b><span id="detailsUser" style="color: gray;"></span></p>
+                <p><b>Company-Name:  </b><span id="company" style="color: gray;"></span></p>
+                <p><b>Address:  </b><span id="address" style="color: gray;"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./all.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
